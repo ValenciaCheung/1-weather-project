@@ -49,8 +49,9 @@ function refreshWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#windSpeed");
   let timeElement = document.querySelector("#current-time");
-  console.log(response.data);
+  let iconElement = document.querySelector("#icon");
 
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`;
   descriptionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
