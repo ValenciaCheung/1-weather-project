@@ -49,6 +49,7 @@ function refreshWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#windSpeed");
   let timeElement = document.querySelector("#current-time");
+  let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`;
@@ -56,7 +57,7 @@ function refreshWeather(response) {
   cityElement.innerHTML = response.data.city;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
-  timeElement.innerHTML = formatDate(response.data.time * 1000);
+  timeElement.innerHTML = formatDate(date);
   //Google: JS date.parse timestamp /api timestamp details like this:1733350775
   // console.log(new Date(1733350775 * 1000));
   temperatureElement.innerHTML = Math.round(temperature);
