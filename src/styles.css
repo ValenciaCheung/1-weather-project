@@ -68,11 +68,10 @@ main {
   font-weight: 400;
   line-height: 24px;
 }
-.current-temperature{
+.current-temperature {
   display: flex;
 }
 .current-temperature-icon {
-
   width: 100px;
   height: 100px;
 }
@@ -80,12 +79,37 @@ main {
   font-size: 72px;
   font-weight: bold;
   line-height: 100px;
-
 }
 .current-temperature-unit {
   margin-top: 10px;
   font-size: 28px;
   top: -32px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.weather-forecast-date {
+  text-align: center;
+  color: #a1a1a1;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.weather-forecast-icon {
+  font-size: 36px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temperature {
+  padding: 0 6px;
 }
 
 footer p {
