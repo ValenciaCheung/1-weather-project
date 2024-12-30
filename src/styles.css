@@ -112,17 +112,14 @@ main {
   padding: 0 6px;
 }
 
-footer p {
-  color: #a1a1a1;
-  font-size: 14px;
-}
-
 .current-details strong {
   color: #f65282;
 }
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
+  font-size: 14px;
   padding-top: 12px;
+  padding: 30px 0 0 0;
   color: rgba(39, 33, 66, 0.4);
 }
